@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using SistemaInventario.Data;
+using SistemaInventario.DataAccess.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

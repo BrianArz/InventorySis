@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaInventario.Utilities\SistemaInventario.Utilities.csproj" />
+  </ItemGroup>
+
 </Project>
