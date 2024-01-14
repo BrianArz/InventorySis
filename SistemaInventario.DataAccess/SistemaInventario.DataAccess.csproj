@@ -14,10 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\Migrations\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\SistemaInventario.Models\SistemaInventario.Models.csproj" />
     <ProjectReference Include="..\SistemaInventario.Utilities\SistemaInventario.Utilities.csproj" />
   </ItemGroup>
