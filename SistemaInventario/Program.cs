@@ -15,7 +15,7 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
-// Agrega el servicio de Razor RuntimeCompilation
+// Add RazorRuntime Compilation service
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
 // Add UnitWork service
