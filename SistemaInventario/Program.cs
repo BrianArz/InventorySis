@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using SistemaInventario.DataAccess.Data;
+using SistemaInventario.DataAccess.Repository;
+using SistemaInventario.DataAccess.Repository.IRepository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +17,9 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 
 // Agrega el servicio de Razor RuntimeCompilation
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
+
+// Add UnitWork service
+builder.Services.AddScoped<IUnitWork, UnitWork>();
 
 var app = builder.Build();
 
