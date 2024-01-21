@@ -27,4 +27,13 @@
     <ProjectReference Include="..\SistemaInventario.Utilities\SistemaInventario.Utilities.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\lib\bootstrap-icons\dist\css\" />
+    <Folder Include="wwwroot\lib\data-tables\dist\js\" />
+    <Folder Include="wwwroot\lib\data-tables\dist\css\" />
+    <Folder Include="wwwroot\lib\sweetalert\dist\js\" />
+    <Folder Include="wwwroot\lib\toastr\dist\js\" />
+    <Folder Include="wwwroot\lib\toastr\dist\css\" />
+  </ItemGroup>
+
 </Project>
