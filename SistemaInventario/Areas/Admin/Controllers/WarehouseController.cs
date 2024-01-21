@@ -3,27 +3,22 @@ using SistemaInventario.DataAccess.Repository.IRepository;
 
 namespace SistemaInventario.Areas.Admin.Controllers
 {
-    public class WarehouseController : Controller
+    [Area("Admin")]
+    public class WarehouseController(IUnitWork unitWork) : Controller
     {
-        private readonly IUnitWork _unitWork;
-
-        public WarehouseController(IUnitWork unitWork)
-        {
-            _unitWork = unitWork;
-        }
+        public IUnitWork UnitWork { get; set; } = unitWork;
 
         public IActionResult Index()
         {
             return View();
         }
 
-
         #region API
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var all = await _unitWork.Warehouse.GetAll();
+            var all = await UnitWork.Warehouse.GetAll();
             return Json(new { data = all });
         }
 
