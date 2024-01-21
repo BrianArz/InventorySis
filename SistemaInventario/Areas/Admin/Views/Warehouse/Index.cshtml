@@ -4,5 +4,30 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
+<div class="row">
+	<div class="col-lg-6">
+		<h2 class="text-primary">Warehouse List</h2>
+	</div>
+	<div class="col-lg-6">
+		<a class="btn btn-outline-primary"><i class="bi bi-plus-square-fill"> Create new warehouse</i></a>
+	</div>
+</div>
+
+<div class="p-4 border rounded bg-light">
+	<table id="tblData" class="table table-responsive table-hover">
+		<thead class="table-dark">
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Estatus</th>
+				<th></th>
+			</tr>
+		</thead>
+	</table>
+</div>
+
+@section Scripts
+{
+	<script src="~/js/warehouse.js"></script>
+}
 
